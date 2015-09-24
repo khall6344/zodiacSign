@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">zodiacSign</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="ageBtn">Your Age</string>
+    <string name="signBtn">Your Sign</string>
+    <string name="title_activity_show_age">ShowAgeActivity</string>
+    <string name="title_activity_show_sign">ShowSignActivity</string>
+    <string name="theUsersAgeTest">ShowSignActivity</string>
+    </resources>
