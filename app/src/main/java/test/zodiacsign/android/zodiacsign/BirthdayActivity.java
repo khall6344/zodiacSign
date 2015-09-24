@@ -53,6 +53,8 @@ public class BirthdayActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(BirthdayActivity.this, ShowSignActivity.class);
+                Date myDate = updateSelectedDate();
+                i.putExtra("TheBirthDay",myDate);
                 startActivity(i);
             }
         });

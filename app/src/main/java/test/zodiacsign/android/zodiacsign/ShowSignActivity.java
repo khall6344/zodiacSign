@@ -5,25 +5,40 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.format.DateUtils;
 import android.view.View;
+import android.widget.TextView;
+
+import java.util.Date;
 
 public class ShowSignActivity extends AppCompatActivity {
+    private TextView usersAge;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_sign);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        usersAge =(TextView)findViewById(R.id.SignTextView);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
+
+
+        Date birthday = (Date) this.getIntent().getExtras().get("TheBirthDay");
+
+
+
+
+
+        //usersAge.setText("Your Age is " + String.valueOf(age));
+
+
     }
 
-}
+
+
+  
+
+    }
+
+
